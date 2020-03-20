@@ -1,0 +1,37 @@
+<div>
+    <input type="text" ng-model="filters.name" placeholder="name">
+    <select ng-model="filters.category" id="category">
+        <option value="" selected>ALL</option>
+        <option ng-repeat="category in categories" ng-value="category">{{category}}</option>
+    </select>
+    <select ng-model="filters.sort" id="sort" ng-change="sortChanged(filters.sort)">
+        <option value="asc" selected>new</option>
+        <option value="desc">old</option>
+    </select>
+    <button ng-click="search(filters)">
+        Search
+    </button>
+</div>
+<table>
+    <tr ng-repeat='recipe in recipes'>
+        <td>
+            <a ng-href="#/recipes/{{recipe.id}}">
+                INFO
+            </a>
+        </td>
+        <td>
+            <a ng-href="#/edit/{{recipe.id}}">
+                EDIT
+            </a>
+        </td>
+        <td>
+            <button ng-click="onDelete(recipe.id)">DELETE</button>
+        </td>
+        <td>{{recipe.id}}</td>
+        <td>{{recipe.name}}</td>
+        <td>{{recipe.category}}</td>
+        <td>{{recipe.shortDesc}}</td>
+        <td>{{recipe.createDate}}</td>
+    </tr>
+</table>
+

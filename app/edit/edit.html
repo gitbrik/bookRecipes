@@ -1,0 +1,13 @@
+<form novalidate class="simple-form">
+  <label>Name: <input type="text" ng-model="recipe.name" /></label><br />
+  <label>Category: <input type="text" ng-model="recipe.category" /></label><br />
+  <label>ShortDesc: <input type="text" ng-model="recipe.shortDesc" /></label><br />
+  <label>LongDesc: <input type="text" ng-model="recipe.longDesc" /></label><br />
+
+  <input type="submit" ng-click="update(recipe)" value="Save" />
+  <div>
+    <a ng-href="#/recipes">
+      RETURN
+    </a>
+  </div>
+</form>

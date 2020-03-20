@@ -1,0 +1,31 @@
+<div>
+    <div>name</div>
+    <div>{{recipe.name}}</div>
+    <br/>
+    <div>category</div>
+    <div>{{recipe.category}}</div>
+    <br/>
+    <div>short description</div>
+    <div>{{recipe.shortDesc}}</div>
+    <br/>
+    <div>long description</div>
+    <div>{{recipe.longDesc}}</div>
+    <br/>
+    <div>create date</div>
+    <div>{{recipe.createDate}}</div>
+    <br/>
+    <div>
+        <a ng-href="#/edit/{{recipe.id}}">
+            EDIT
+        </a>
+    </div>
+    <div>
+        <button ng-click="onDelete(recipe.id)">DELETE</button>
+    </div>
+    <div>
+        <a ng-href="#/recipes">
+            RETURN
+        </a>
+    </div>
+</div>
+

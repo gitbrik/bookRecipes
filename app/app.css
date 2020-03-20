@@ -1,0 +1,45 @@
+/* app css stylesheet */
+*{
+  font-family: "Malayalam MN", sans-serif;
+}
+.menu {
+  list-style: none;
+  height: 40px;
+}
+
+.menu > li {
+  display: inline;
+  margin-right: 20px;
+}
+
+
+.menu > li > a{
+  color: orangered;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+body{
+  margin-left: 40px;
+}
+
+table{
+  width: 100%;
+  padding-top: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+button, input[type=submit]{
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+td{
+  padding: 10px;
+}
